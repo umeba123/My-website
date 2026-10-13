@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <STYLe>
+      h1{
+text-align: center;
+color: black;
+      }
+      p{
+        text-align: center;
+        color: black;
+        
+      }
+     .contact{
+      text-align: center;
+      padding: 50px;
+      margin: 50px;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 40px;
+     } 
+
+.link a{
+  font-size:70px ;
+  color: brown;
+}
+input{
+  height: 50px;
+  text-align: center;
+ border: 2px solid floralwhite;
+ width: 500px;
+ background-color: brown;
+}
+
+
+    </STYLe>
+</head>
+<body>
+  
+  <h1 class="link">
+   <a href="index.html">home</a>
+<a href="product.html">product
+</a>
+<a href="contact.html">contact</a>
+
+</h1>
+    <section class="contact">
+  <h1>CONTACT US</h1>
+  <p>we would love to hear from you!</p>
+
+ <form id="contact-form">
+
+    <input type="text" id="name" placeholder="Your Name">
+
+    <input type="email" id="email" placeholder="Your Email">
+
+    <input type="tel" id="phone" placeholder="Your Phone">
+
+    <button type="submit">Submit</button>
+
+</form>
+
+
+  <div class="a">
+    <p>email:novabags@gmail.com</p>
+    <p>phone:0300-1234567</p>
+    <P>address:pakistan</P>
+  </div>
+
+
+    </section>
+  
+  <script>
+    document.getElementById("contact-form").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let phone = document.getElementById("phone").value;
+
+    if (name !== "" && email !== "" && phone !== "") {
+        alert("Thank you! Your message has been submitted.");
+    } else {
+        alert("Please fill in all fields.");
+    }
+});
+  </script>
+    
+    
+</body>
+</html>

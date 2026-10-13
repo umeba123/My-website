@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product</title>
+<style>
+ .a img {
+width: 300px;
+height:200px;
+border-radius: 20px;
+
+}
+.a{
+    transition-property:background-color ;
+    border: 2px solid black;
+    border-radius: 20px;
+       border-width: 3px;
+    margin: 20px;
+      background-color:pink;
+    transition-duration: 2s;
+    transition-delay:  1s; 
+}
+.a:hover{
+    background-color:yellow ;
+} 
+.a p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.products{
+ 
+    display: flex;
+    text-align: center;
+    gap: 35px;
+    flex-wrap:wrap ;  
+}
+h1{
+    text-align: center;
+    font-size: 50px;
+    color: brown;
+}
+.link a {
+align-items: center;
+justify-content: center;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-weight: 500;
+text-decoration: none;
+gap: 70px;
+color: brown;
+
+} 
+p{
+    text-align: center;
+    font-size: 30px;
+    color: brown;
+   
+}
+    @keyframes bags{
+  0%{
+    transform: translateY(50PX);
+  }
+      50%{
+        transform: translateY(10px);
+      }  
+      100%{
+        transform: translateY(50PX);
+      }
+    }
+
+    .a{
+        border:2PX solid floralwhite ;
+        height: 400PX;
+        width: 300PX;
+        animation-name: bags;
+animation-duration: 3s; 
+ animation:bags 2s infinite ;
+ animation-delay: 3s;  
+    }
+.container{
+  display: flex;
+  flex-wrap: wrap;
+ 
+}
+  
+</style>
+</head>
+<body>
+
+<header>
+<h1 class="link">
+<a href="index.html">home</a>
+<a href="product.html">Product</a>
+<a href="contact.html">Contact</a>
+</h1>
+   </header> 
+       <h1>our products</h1>
+    <p>explore our stylish and beautiful bags.</p>
+<section class="products">
+    <div class="container">
+
+<div class="a">
+<img src="1000108605.png" alt="photo">
+<h1>denim bag</h1>
+<p>PKR,2100</p>
+</div>
+<div class="a">
+<img src="1000108603.png" alt="photo">
+<h1>kids bag</h1>
+<p>PKR,1800</p>
+</div>
+<div class="a">
+<img src="1000108602.png" alt="photo">
+<h1>beach bag</h1>
+<p>PKR,1950</p>
+</div>
+<div class="a">
+<img src="1000108276.png" alt="photo">
+<h1>shoulder bag</h1>
+<p>PKR,2100</p>
+</div>
+<div class="a">
+<img src="1000108600.png" alt="photo">
+<h1>drawstringbag</h1>
+<p>PKR,2150</p>
+</div>
+</div>
+</section>
+</body>
+</html>
